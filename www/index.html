@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>LamReminder</title>
+    <meta
+      name="description"
+      content="Trage ein, wann du die Pille eingenommen oder vergessen Hast."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="page_burgermenu.html">
+          <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </a>
+        <div class="navbar-text">LamReminder</div>
+        <button class="colormode-button" id="color-mode">
+          <img
+            src="img/day-and-night.png"
+            alt="Darkmode/Lightmode"
+            id="darkmode-lightmode-icon"
+          />
+        </button>
+      </div>
+    </header>
+    <!-- -------------------START------------------- -->
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Back</button>
+          <button id="nextButton">Next</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Sonntag</div>
+        <div>Montag</div>
+        <div>Dienstag</div>
+        <div>Mittwoch</div>
+        <div>Donnerstag</div>
+        <div>Freitag</div>
+        <div>Samstag</div>
+      </div>
+
+      <div id="calendar"></div>
+      <br /><br /><br /><br />
+      <div id="tagesinfo">
+        <h2>Wochentag, datum</h2>
+        <p>[] Pille genommen</p>
+        <p>[] Pille nicht genommen</p>
+      </div>
+    </div>
+    <div id="newEventModal">
+      <h2>Pille eingenommen?</h2>
+
+      <input id="eventTitleInput" placeholder="Notiz..." />
+
+      <button id="saveButton">Ja</button>
+      <button id="cancelButton">Nein</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Pille eingenommen?</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Ja</button>
+      <button id="closeButton">Nein</button>
+    </div>
+    <div id="modalBackDrop"></div>
+    <!-- -------------------END------------------- -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
+<!--cordova run android (run app), anschließend in android studio öffnen, bauen und am handy simulieren-->

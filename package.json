@@ -1,0 +1,26 @@
+{
+  "name": "io.cordova.pillreminder",
+  "displayName": "PillReminder",
+  "version": "1.0.0",
+  "description": "A simple app to remind you to take the pill.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Astrid Entner",
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "gradle": "^1.2.4"
+  },
+  "devDependencies": {
+    "cordova-android": "^12.0.1"
+  }
+}

@@ -1,0 +1,19 @@
+==========================================================================================
+			so wurde das "Grundgerüst" erstellt:
+==========================================================================================
+
+- leeren Ordner des Projektes in VSCode öffnen
+- hier Terminal öffnen
+- 'npm install -g cordova'
+- 'cordova create .'
+- 'cordova platform add android'
+- 'cordova run android'
+- in Android studio das Projekt öffnen
+- oben rechts in der Menüleiste auf 'run app'
+- app sollte sich am Handy öffnen
+	
+==========================================================================================
+			erstes Brainstorming über Excalidraw:
+==========================================================================================
+
+https://excalidraw.com/#json=Sjjjj4wFxYipuU_HPnQBc,X3Sx6SB5mY5yONRBTySL1A
