@@ -8,5 +8,13 @@
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="mdpi" src="/res/icon/android/icon_48.png" />
+        <icon density="hdpi" src="/res/icon/android/icon_72.png" />
+        <icon density="xhdpi" src="/res/icon/android/icon_96.png" />
+        <icon density="xxhdpi" src="/res/icon/android/icon_114.png" />
+        <icon density="xxxhdpi" src="/res/icon/android/icon_192.png" />
+    </platform>
 </widget>
 
