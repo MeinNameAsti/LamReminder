@@ -32,13 +32,13 @@ const deleteEventModal = document.getElementById("deleteEventModal");
 const backDrop = document.getElementById("modalBackDrop");
 const eventTitleInput = document.getElementById("eventTitleInput");
 const weekdays = [
-  "Sonntag",
   "Montag",
   "Dienstag",
   "Mittwoch",
   "Donnerstag",
   "Freitag",
   "Samstag",
+  "Sonntag",
 ];
 
 function openModal(date) {
@@ -70,7 +70,9 @@ function load() {
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  const dateString = firstDayOfMonth.toLocaleDateString("en-us", {
+  console.log("daysInMonth: ", daysInMonth);
+
+  const dateString = firstDayOfMonth.toLocaleDateString("de-DE", {
     weekday: "long",
     year: "numeric",
     month: "numeric",
@@ -78,8 +80,10 @@ function load() {
   });
   const paddingDays = weekdays.indexOf(dateString.split(", ")[0]);
 
+  console.log("paddingDays: ", paddingDays);
+
   document.getElementById("monthDisplay").innerText = `${dt.toLocaleDateString(
-    "en-us",
+    "de-DE",
     { month: "long" }
   )} ${year}`;
 
