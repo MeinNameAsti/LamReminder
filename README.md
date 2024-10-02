@@ -4,8 +4,6 @@ A reminder app for your mobile phone for Lamuna20
 
 ## ✔️ ToDo´s
 
-~~Test~~
-
 Screen für Einstellungen
 
 Screen für Informationen
@@ -20,8 +18,8 @@ Kamera zugriff für´s Profilbild
 
 Webseite für App erstellen
 
-Slideshow unterhalb der nav einblenden
+~~Slideshow unterhalb der nav einblenden~~
 
 ## 🕑 Current status of the main page
 
-![screenshot](notizen/Aktueller_ststus.png)
+![screenshot](notizen/Aktueller_status.png)

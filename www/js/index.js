@@ -18,7 +18,7 @@ document.querySelector("#color-mode").addEventListener("click", () => {
   }
 });
 
-//----------START----------
+//----------START CALENDER CONTAINER----------
 
 let nav = 0;
 let clicked = null;
@@ -179,7 +179,7 @@ function initButtons() {
 initButtons();
 load();
 
-//----------ENDE----------
+//----------ENDE CALENDER CONTAINER----------
 
 //display dailyInformation
 
@@ -187,3 +187,39 @@ let currentDay = load();
 
 dailyInformation.innerHTML = load();
 dailyDetails.innerHTML = "testi";
+
+//----------START SLIDESHOW----------
+const indikatoren = document.getElementsByClassName("indikator");
+indikatoren[0].classList.add("aktiv");
+
+const slides = document.getElementsByClassName("slide");
+slides[0].classList.add("aktiv");
+
+let aktuellerIndex = 0;
+
+function umschalten(anzahl) {
+  let neuerIndex = aktuellerIndex + anzahl;
+
+  //Wenn mann beim ersten Bild nochmal nach links klickt
+  if (neuerIndex < 0) {
+    neuerIndex = slides.length - 1;
+  }
+
+  //Wenn mann beim letzten Bild nochmal nach rechts klickt
+  if (neuerIndex > slides.length - 1) {
+    neuerIndex = 0;
+  }
+
+  springen(neuerIndex);
+}
+
+function springen(neuerIndex) {
+  indikatoren[aktuellerIndex].classList.remove("aktiv");
+  slides[aktuellerIndex].classList.remove("aktiv");
+
+  indikatoren[neuerIndex].classList.add("aktiv");
+  slides[neuerIndex].classList.add("aktiv");
+
+  aktuellerIndex = neuerIndex;
+}
+//----------ENDE SLIDESHOW----------
