@@ -70,8 +70,6 @@ function load() {
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  console.log("daysInMonth: ", daysInMonth);
-
   const dateString = firstDayOfMonth.toLocaleDateString("de-DE", {
     weekday: "long",
     year: "numeric",
@@ -79,8 +77,6 @@ function load() {
     day: "numeric",
   });
   const paddingDays = weekdays.indexOf(dateString.split(", ")[0]);
-
-  console.log("paddingDays: ", paddingDays);
 
   document.getElementById("monthDisplay").innerText = `${dt.toLocaleDateString(
     "de-DE",
@@ -117,6 +113,16 @@ function load() {
 
     calendar.appendChild(daySquare);
   }
+
+  //get dailyInformation
+  const weekday = dt.toLocaleDateString("de-DE", { weekday: "long" });
+  const day1 = dt.getDate();
+  const month1 = dt.toLocaleDateString("de-DE", { month: "long" });
+  const year1 = dt.getFullYear();
+
+  const dailyInformation = `${weekday}, ${day1}. ${month1} ${year1}`;
+
+  return dailyInformation;
 }
 
 function closeModal() {
@@ -172,3 +178,12 @@ function initButtons() {
 
 initButtons();
 load();
+
+//----------ENDE----------
+
+//display dailyInformation
+
+let currentDay = load();
+
+dailyInformation.innerHTML = load();
+dailyDetails.innerHTML = "testi";
