@@ -12,13 +12,15 @@ Screen für Profil
 
 Screen für Login (Formular)
 
-Header über die ganze Seite ziehen
+~~Header über die ganze Seite ziehen~~
 
 Kamera zugriff für´s Profilbild
 
 Webseite für App erstellen
 
 ~~Slideshow unterhalb der nav einblenden~~
+
+Farben für Light- und Darkmode anpassen
 
 ## 🕑 Current status of the main page
 

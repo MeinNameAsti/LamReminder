@@ -14,6 +14,7 @@
 body {
   --color-background: #d4d4d4;
   --color-font: #000000;
+  padding: 0;
 }
 
 /*Colors Darkmode*/
@@ -31,6 +32,7 @@ body {
   max-width: 1260px;
   margin: 0 auto;
   padding: 8px;
+  padding: 0;
 }
 
 a {
