@@ -30,17 +30,204 @@
         </button>
       </div>
     </header>
-    <h1>Info´s</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      eligendi sit inventore veniam fugiat consequuntur quibusdam perferendis
-      minus ipsum cupiditate dolores nobis vitae cumque magnam ex deleniti,
-      nostrum necessitatibus assumenda.
-    </p>
-    <p>Zyklusinfo</p>
-    <p>Richtige Einnahme</p>
-    <br /><br />
-    <a href="index.html"><p>[zurück zur Hauptseite]</p></a>
-    <script src="js/index.js"></script>
+    <div id="infoseite">
+      <div class="ueberschrift">Informationen</div>
+      <div id="merksatz">
+        Eine Woche Blut, ein paar Tage geil. Eine Woche gehts dir gut, dann
+        wieder eine Woche Leid.
+      </div>
+      <br />
+      <!------------------------>
+      <div class="ausklapptext-infoseite" onclick="toggleText(this)">
+        <span>Zyklusinformationen</span>
+        <span class="arrow-infoseite">▶</span>
+      </div>
+      <div
+        id="infotext_Zyklusinformationen"
+        class="infotext"
+        data-text="Der weibliche Zyklus besteht aus regelmäßig wiederkehrenden
+        Veränderungen der Gebärmutterschleimhaut und der Reifung einer Eizelle,
+        die durch Hormone aus dem Hypothalamus, der Hirnanhangdrüse und den
+        Eierstöcken gesteuert werden. Der Zyklus variiert in der Länge und dauert
+        meist zwischen 25 und 35 Tagen, wobei die sogenannte 'Ideallänge' von
+        28 Tagen nicht immer zutrifft. Er unterliegt verschiedenen Schwankungen
+        und ist von Frau zu Frau unterschiedlich.
+
+        Der Zyklus umfasst vier Phasen.
+        
+        1. Menstruationsphase (Desquamationsphase):
+        Diese Phase beginnt mit der Menstruation, bei der die oberste Schicht
+        der Gebärmutterschleimhaut abgestoßen wird. Blutgefäße in der
+        Schleimhaut öffnen sich, und das Blut wird über die Vagina ausgeschieden.
+        Der Blutverlust beträgt etwa 50 bis 150 Milliliter und dauert meist
+        3 bis 7 Tage. Vor der Menstruation können prämenstruelle Symptome (PMS)
+        wie Brustempfindlichkeit, Stimmungsschwankungen, Reizbarkeit und
+        Müdigkeit auftreten, die in ihrer Intensität variieren.
+        
+        2. Follikelreifungsphase (Proliferationsphase):
+        Während dieser Phase wird die Gebärmutterschleimhaut durch Östrogen
+        wieder aufgebaut. Ein follikel-stimulierendes Hormon (FSH) lässt in den
+        Eierstöcken mehrere Follikel heranreifen, von denen jedoch nur einer
+        vollständig ausreift. Um den 14. Zyklustag sinkt der Östrogenspiegel,
+        während die Hormone FSH und LH ansteigen, was zum Eisprung führt.
+        Die Eizelle wird aus dem Eierstock ausgestoßen und kann für etwa 24 Stunden
+        befruchtet werden. Frauen spüren den Eisprung manchmal als dumpfen
+        Schmerz im Unterbauch, den sogenannten Mittelschmerz.
+        
+        3. Lutealphase (Sekretionsphase):
+        Der Follikel, der die Eizelle freigegeben hat, verwandelt sich in den
+        Gelbkörper, der Progesteron produziert. Dieses Hormon sorgt dafür, dass
+        die Gebärmutterschleimhaut für eine mögliche Einnistung einer befruchteten
+        Eizelle vorbereitet wird. Es kann zu Symptomen wie Brustspannen,
+        Krämpfen und Blähungen kommen, vor allem bei Frauen mit Reizdarm.
+        
+        4. Ischämische Phase:
+        Wenn keine Befruchtung stattfindet, bildet sich der Gelbkörper nach etwa
+        10 bis 12 Tagen zurück. Der Progesteronspiegel sinkt, was zur Auslösung
+        der Menstruation führt und einen neuen Zyklus einleitet.
+        
+        Während des Zyklus verändert sich auch der Zervixschleim. Zu Beginn des
+        Zyklus ist er fest und gelblich. Um den Eisprung wird er klarer, glasig
+        und spinnbar, was den Spermien den Weg in die Gebärmutter erleichtert.
+        Nach dem Eisprung wird der Schleim wieder fester und gelblich, wodurch
+        der Gebärmutterhals verschlossen wird. Ein veränderter Ausfluss sollte
+        ärztlich abgeklärt werden, wenn er unangenehm riecht
+        oder mit Juckreiz einhergeht."
+      ></div>
+      <!------------------------>
+      <div class="ausklapptext-infoseite" onclick="toggleText(this)">
+        <span>Korrekte Einnahme</span>
+        <span class="arrow-infoseite">▶</span>
+      </div>
+      <div
+        id="infotext_Einnahme"
+        class="infotext"
+        data-text="Anwendung
+        Wenn du die Pille das erste Mal nimmst, beginnst du am ersten Tag deiner Monatsblutung.
+        Danach nimmst du jeden Tag zur gleichen Uhrzeit eine Tablette. Wenn du die Packung
+        zu Ende genommen hast, machst du sieben Tage Pause. In der pillenfreien Zeit bekommst
+        du deine Monatsblutung. Nach sieben Tagen beginnst du mit einer neuen Packung,
+        egal ob deine Blutung schon ein paar Tage aufgehört hat oder noch anhält.
+        Auch in der Pause bist du vor einer Schwangerschaft geschützt."
+      ></div>
+      <!------------------------>
+      <div class="ausklapptext-infoseite" onclick="toggleText(this)">
+        <span>Verhütungsmittel</span>
+        <span class="arrow-infoseite">▶</span>
+      </div>
+      <div
+        id="infotext_Verhütungsmittel"
+        class="infotext"
+        data-text="Neben der Pille gibt es auch viele weitere Verhütungsmethoden.
+        Sowohl für Frauen als auch für Männer.
+        Hier sind einige Beispiele für Frauen:
+        
+        1. Natürliche Verhütung
+        Die Natürliche Verhütung bietet durch Selbstbeobachtung und Körpermessungen die Möglichkeit,
+        die fruchtbaren von den unfruchtbaren Tagen im weiblichen Zyklus zu unterscheiden.
+        Dadurch wissen Sie, wann Sie besser keinen ungeschützten Geschlechtsverkehr haben sollten
+        und an welchen Tagen Sie ein geringes Risiko haben, schwanger zu werden.
+        
+        
+        2. Kupferspirale und Kupferkette
+        Die Kupferspirale und Kupferkette zählen zu den Intrauterinpessaren. „Intrauterin“ bedeutet,
+        dass die Spirale vom Frauenarzt in der Gebärmutterhöhle platziert wird – das geht am besten
+        während der Monatsblutung. Während die Spirale T-förmig ist und nur in die Gebärmutter eingelegt wird,
+        besteht die Kupferkette aus mehreren kleinen Kupferzylindern, die auf einem Nylonfaden aufgefädelt sind.
+        Dieser Faden wird anders als die Spirale in der Gebärmutterwand verankert, weshalb diese Methode nur für
+        Frauen mit einer ausreichend dicken Gebärmutterwand geeignet ist.
+        
+        Beide Formen enthalten keine Hormone, geben aber Kupfer-Ionen ab, um Spermien zu schädigen.
+        
+        Der Nachteil der hormonfreien Spirale ist: in manchen Fällen können die Kupferspirale und -kette zu
+        stärkeren Regelblutungen und Menstruationsbeschwerden führen, auch ein leicht erhöhtes Infektionsrisiko besteht.
+               
+        3. Diaphragma und Portiokappe
+        Seit vielen Jahrzehnten sind das Diaphragma und die Portiokappe zur hormonfreien und mechanischen Verhütung bekannt.
+        Sie bestehen aus Silikon und haben außen einen Federring. Diese beiden mechanischem Verhütungsmittel
+        werden bis zu zwei Stunden vor dem Geschlechtsverkehr über die Scheide eingeführt und auf den Muttermund gesetzt.
+        So haben die Spermien eine Barriere vor sich.
+        
+        Die Portiokappe saugt sich dabei sogar an den Muttermund an und sitzt etwas fester als ein Diaphragma.
+        
+        Das Diaphragma und die Portiokappe sollten zusammen mit einem Spermien-abtötenden Gel benutzt werden.
+        Nach dem Geschlechtsverkehr muss es mindestens acht Stunden in der Vagina bleiben.
+        
+        Nachteilig ist: Fehler beim Einsetzen können zu ungewollten Schwangerschaften führen.
+        
+        4. Frauenkondom
+        Eine weitere Besonderheit ist das Frauenkondom oder auch „Femidom“ genannt. Es ähnelt einem Kondom,
+        ist aber länger und deutlich weiter. Es ist ebenso nur zur Einmalanwendung geeignet.
+        Der innere Ring des Frauenkondoms wird in der Scheide eingeführt und fixiert.
+        Der äußere Ring befindet sich auf den Venuslippen. Die dünne Latexschicht kleidet die Scheide wie
+        eine zweite Haut aus und fängt wie ein Kondom die Spermien auf.
+        
+        Besonders großer Pluspunkt ist: Frauenkondome schützen neben den klassischen Kondomen als einzige
+        der genannten Methoden der hormonfreien Verhütung vor sexuell übertragbaren Krankheiten.
+        
+        Nachteilig ist aber, dass sich einige Paare durch das Femidon beim Sex gestört fühlen,
+        es kann bei Bewegungen etwas knistern und auch verrutschen.
+        
+        5. Kondome
+        Das gute alte Kondom bleibt auch weiter ein altbewährtes und wichtiges Verhütungsmittel,
+        das ohne Hormone funktioniert. Es wird über den erigierten Penis gestülpt und hat ein kleines
+        Reservoir, um das Ejakulat des Mannes aufzufangen. Bei richtiger Anwendung und passender Kondomgröße bietet
+        es einen recht zuverlässigen Schutz vor einer Schwangerschaft und sexuell übertragbaren Krankheiten.
+        
+        6. Sterilisation
+        Ist die Familienplanung für Frauen und auch Männer abgeschlossen, ist die Sterilisation eine Möglichkeit der
+        langfristigen Verhütung – ganz ohne Hormone. Dabei werden die beiden Eileiter oder bei Männern die Samenleiter
+        durchtrennt oder verschlossen und eine Befruchtung dadurch dauerhaft verhindert. 
+        
+        Jedoch sollte es eine wohlüberlegte Entscheidung sein, denn einmal gekappt, ist es nicht so einfach,
+        die Ei- und Samenleiter wieder zu verbinden.
+        
+        Für den Notfall: Die 'Pille danach' - Nach einer Verhütungspanne kann die Pille danach
+        eine ungewollte Schwangerschaft verhindern. Das Medikament ist am wirksamsten,
+        wenn es möglichst bald nach dem Sex eingenommen wird.
+        Es kann ohne Rezept in der Apotheke gekauft werden."
+      ></div>
+      <!------------------------>
+      <div class="ausklapptext-infoseite" onclick="toggleText(this)">
+        <span>Arten der Pille</span>
+        <span class="arrow-infoseite">▶</span>
+      </div>
+      <div
+        id="infotext_Pillenarten"
+        class="infotext"
+        data-text="Es wird zwischen folgenden Arten der Antibabypille unterschieden:
+        Minipillen, Kombinationspillen (die 'klassische' Antibabypille) und
+        Mikropillen (niedrig dosierte Kombinationspillen).
+
+        Sie unterscheiden sich anhand ihrer hormonellen Zusammensetzung. Die Wirkstoffe
+        der Pille ähneln den körpereigenen weiblichen Geschlechtshormonen Gestagen und Östrogen,
+        die den weiblichen Zyklus regulieren und eine Schwangerschaft initiieren können.
+        Richtig eingenommen unterdrücken diese Wirkstoffe der Pille die Reifung des Eis und den
+        Eisprung. Gestagene verhindern zudem den Aufstieg männlichen Samenzellen in die
+        Gebärmutter und dadurch eine Befruchtung.
+        
+        Minipille
+        Enthalten nur Gestagene als Wirkstoff. Werden daher auch als östrogenfreie Pillen bezeichnet.
+        Sie haben weniger Nebenwirkungen müssen aber immer zur gleichen Uhrzeit eingenommen werden.
+        
+        Kombinationspille
+        Enthalten sowohl Gestagene als auch Östrogene. Sie werden in Ein-, Zwei-, Drei- und
+        Vierphasenpräparate unterteilt. Größter Nachteil ist das nachweislich erhöhte Thromboserisiko.
+        
+        Mikropille
+        Niedrig dosierte Kombinationspille mit weniger Nebenwirkungen.
+
+        Lamuna20
+        Aufgrund der geringen Hormonmengen kann LAMUNA 20 als niedrig dosierte Pille bezeichnet werden.
+        Da in jeder Tablette der Blisterpackung die gleichen Hormone in einer gleichen
+        Dosierung kombiniert sind, spricht man von einem einphasigen kombinierten
+        Empfängnisverhütungsmittel zum Einnehmen.
+       "
+      ></div>
+      <!------------------------>
+      <br /><br />
+      <a href="index.html"><p>[zurück zur Hauptseite]</p></a>
+    </div>
+    <script src="js/page_informationen.js"></script>
   </body>
 </html>

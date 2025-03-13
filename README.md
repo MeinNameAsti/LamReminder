@@ -4,9 +4,9 @@ A reminder app for your mobile phone for Lamuna20
 
 ## ✔️ ToDo´s
 
-Screen für Einstellungen
+Informationstexte auf der Infoseite schöner einblenden
 
-Screen für Informationen
+Screen für Einstellungen
 
 Screen für Profil
 
@@ -16,11 +16,11 @@ Screen für Login (Formular)
 
 Kamera zugriff für´s Profilbild
 
-Webseite für App erstellen
-
 ~~Slideshow unterhalb der nav einblenden~~
 
 Farben für Light- und Darkmode anpassen
+
+Namen im code (z.B für klassennamen usw) alle einheitlich auf englisch
 
 ## 🕑 Current status of the main page
 

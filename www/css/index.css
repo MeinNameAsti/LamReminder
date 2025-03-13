@@ -37,18 +37,11 @@ body {
 
 a {
   text-decoration: none;
-  cursor: pointer;
   color: #247ba0;
 }
 
-.subpoint_burgermenu {
-  background-color: #afafaf;
-  max-inline-size: 40%;
-}
-
-.subpoint_burgermenu:hover {
-  background-color: #979797;
-  max-inline-size: 40%;
+span {
+  margin-left: 10px;
 }
 
 .navbar {
@@ -316,3 +309,41 @@ button {
 }
 
 /*-----------END SLIDESHOW-----------*/
+/*----------START INFOSEITE----------*/
+.ueberschrift {
+  padding: 10px;
+  color: #d36c6c;
+  font-size: 28px;
+}
+
+.unterpunkt {
+  padding: 10px;
+  font-size: 18px;
+}
+
+#merksatz {
+  padding: 10px;
+  color: #92a1d1;
+  font-size: 18px;
+}
+
+/*----------END SLIDESHOW----------*/
+/*--------START AUFKLAPPTEXT--------*/
+.ausklapptext-infoseite {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.arrow-infoseite {
+  transition: transform 0.3s ease;
+}
+.infotext {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/*--------ENDE AUFKLAPPTEXT--------*/
