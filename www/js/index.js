@@ -179,14 +179,16 @@ function initButtons() {
 initButtons();
 load();
 
-//----------ENDE CALENDER CONTAINER----------
-
+//----------END CALENDER CONTAINER----------
 //display dailyInformation
 
 let currentDay = load();
 
 dailyInformation.innerHTML = load();
-dailyDetails.innerHTML = "testi";
+//Hier statt 'test' die Infos aus dem Modal anzeigen
+TODO: dailyDetails.innerHTML = "test";
+let test = document.getElementsByClassName("event");
+console.log("🚀 ~ test:", test);
 
 //----------START SLIDESHOW----------
 const indikatoren = document.getElementsByClassName("indikator");

@@ -117,19 +117,50 @@
       </div>
     </div>
     <div id="newEventModal">
-      <h2>Pille eingenommen?</h2>
-
+      <h2>Pille genommen?</h2>
+      <label>
+        <input type="radio" name="pilleGenommen" value="genommen" checked />
+        Ja </label
+      ><br />
+      <label>
+        <input type="radio" name="pilleGenommen" value="nichtGenommen" />
+        Nein </label
+      ><br />
+      <label>
+        <input type="radio" name="pilleGenommen" value="verspätetGenommen" />
+        Ja, verspätet
+      </label>
+      <br />
+      <h2>Geschlechtsverkehr?</h2>
+      <label>
+        <input
+          type="radio"
+          name="Geschlechtsverkehr"
+          value="JaOhneWeitereVerhütung"
+        />
+        Ja, ohne weitere Verhütung </label
+      ><br />
+      <label>
+        <input
+          type="radio"
+          name="Geschlechtsverkehr"
+          value="JaMitWeitererVerhütung"
+        />
+        Ja, mit weiterer Verhütung </label
+      ><br />
+      <label>
+        <input type="radio" name="Geschlechtsverkehr" value="Nein" checked />
+        Nein
+      </label>
+      <h2>Weitere Info´s</h2>
       <input id="eventTitleInput" placeholder="Notiz..." />
-
-      <button id="saveButton">Ja</button>
-      <button id="cancelButton">Nein</button>
+      <button id="saveButton">Speichern</button>
+      <button id="cancelButton">Abbrechen</button>
     </div>
 
     <div id="deleteEventModal">
-      <h2>Pille eingenommen?</h2>
-
+      <h2>Eintragung verwerfen?</h2>
       <p id="eventText"></p>
-
       <button id="deleteButton">Ja</button>
       <button id="closeButton">Nein</button>
     </div>
