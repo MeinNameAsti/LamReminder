@@ -223,3 +223,10 @@ function springen(neuerIndex) {
   aktuellerIndex = neuerIndex;
 }
 //----------ENDE SLIDESHOW----------
+//----------START SLIDESHOW VERLINKUNG----------
+document
+  .getElementById("slide-textbereich-link")
+  .addEventListener("click", function () {
+    window.location.href = "page_informationen.html?highlight=true";
+  });
+//----------START SLIDESHOW VERLINKUNG----------

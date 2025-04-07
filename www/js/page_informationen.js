@@ -51,3 +51,21 @@ function fadeOutText(element, callback) {
   removeLetter();
 }
 //----------ENDE AUFKLAPPTEXT----------
+//----------START TEXT AUFLEUCHTEN----------
+const urlParams = new URLSearchParams(window.location.search);
+const highlight = urlParams.get("highlight");
+
+if (highlight === "true") {
+  const blinker = document.querySelectorAll(".blinkwort");
+
+  blinker.forEach((el) => {
+    el.style.animation = "blinken 1s infinite";
+  });
+
+  setTimeout(() => {
+    blinker.forEach((el) => {
+      el.style.animation = "none";
+    });
+  }, 3000);
+}
+//----------ENDE TEXT AUFLEUCHTEN----------

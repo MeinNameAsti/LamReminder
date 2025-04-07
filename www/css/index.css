@@ -345,5 +345,17 @@ button {
   white-space: nowrap;
   margin-left: 10px;
 }
-
-/*--------ENDE AUFKLAPPTEXT--------*/
+/*--------END AUFKLAPPTEXT--------*/
+/*--------START TEXT AUFLEUCHTEN--------*/
+@keyframes blinken {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*--------END TEXT AUFLEUCHTEN--------*/
